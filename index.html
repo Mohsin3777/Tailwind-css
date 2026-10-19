@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Tailwind Page</title>
+
+  <!-- Tailwind Play CDN: no install needed, great for learning -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- bg-gray-50: light background | text-gray-800: default text color -->
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <!-- flex + justify-between: logo on the left, links on the right -->
+  <nav class="flex items-center justify-between bg-white px-6 py-4 shadow">
+    <h1 class="text-xl font-bold text-indigo-600">MyPage</h1>
+
+    <!-- hidden on mobile, shown as flex from md (768px) up -->
+    <ul class="hidden md:flex gap-6 text-gray-600">
+      <li><a href="#" class="hover:text-indigo-600">Home</a></li>
+      <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
+      <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+    </ul>
+
+    <button class="rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
+      Sign up
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <!-- text-center centers text, py-20 adds vertical padding -->
+  <section class="px-6 py-20 text-center">
+    <h2 class="text-4xl font-extrabold md:text-5xl">
+      Learning <span class="text-indigo-600">Tailwind</span> is fun
+    </h2>
+    <!-- max-w-xl limits width, mx-auto centers the block -->
+    <p class="mx-auto mt-4 max-w-xl text-lg text-gray-600">
+      Build good-looking pages quickly by combining small utility classes
+      right in your HTML.
+    </p>
+    <button class="mt-8 rounded-full bg-indigo-600 px-8 py-3 font-semibold text-white shadow-lg transition hover:bg-indigo-700">
+      Get started
+    </button>
+  </section>
+
+  <!-- CARDS -->
+  <!-- 1 column on mobile, 2 on md, 3 on lg -->
+  <section id="features" class="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 pb-20 md:grid-cols-2 lg:grid-cols-3">
+
+    <div class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+      <h3 class="mb-2 text-lg font-bold">Utility classes</h3>
+      <p class="text-gray-600">Style elements with small classes like p-4, text-lg and bg-white.</p>
+    </div>
+
+    <div class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+      <h3 class="mb-2 text-lg font-bold">Responsive</h3>
+      <p class="text-gray-600">Use md: and lg: prefixes to change the layout on bigger screens.</p>
+    </div>
+
+    <div class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+      <h3 class="mb-2 text-lg font-bold">State variants</h3>
+      <p class="text-gray-600">Add hover:, focus: and dark: to style different states.</p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="mx-auto max-w-md px-6 pb-20">
+    <h2 class="mb-4 text-center text-2xl font-bold">Contact us</h2>
+    <form class="flex flex-col gap-4 rounded-xl bg-white p-6 shadow-md">
+      <input type="text" placeholder="Your name"
+        class="rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <input type="email" placeholder="Your email"
+        class="rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <textarea rows="3" placeholder="Message"
+        class="rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      <button type="submit" class="rounded bg-indigo-600 py-2 font-semibold text-white hover:bg-indigo-700">
+        Send
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 py-6 text-center text-sm text-gray-400">
+    Built with Tailwind CSS
+  </footer>
+
+</body>
+</html>
