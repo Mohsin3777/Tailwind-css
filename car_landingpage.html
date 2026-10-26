@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car landing page</title>
+
+    <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts for Luxury Serif typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #080808;
+      color: #ffffff;
+    }
+    .font-serif-luxury {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-[#080808] text-white">
+    
+    <!-- NAVBAR -->
+     <header class="fixed top-0 left-0 right-0 z-50 bg-black-40 backdrop-blur-md border-b border-white/10 px-6 md:px-16 py-4">
+        <div class="max-w-7xl ms-auto flex items-center justify-between">
+
+            <!-- Logo -->
+             <div class="flex items-center gap-3">
+                <i class="fa-solid fa-shield-halved text-[#D4AF37] text-2xl"></i>
+                <div class="flex flex-col">
+                    <span class="font-serif-luxury  font-bold tracking-widest text-lg leading-none text-white">LUXORA</span>
+                    <span class="text-[9px] tracking-[0.3rem] text-gray-400 font-medium">MOTORS</span>
+                </div>
+             </div>
+
+             <!-- Links -->
+              <nav class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase text-gray-300 font-medium">
+<a href="#" class="hover:text-[#D4AF37] transition-colors">Home</a>
+        <a href="#" class="hover:text-[#D4AF37] transition-colors">Inventory</a>
+        <a href="#" class="hover:text-[#D4AF37] transition-colors">Services</a>
+        <a href="#" class="hover:text-[#D4AF37] transition-colors">About Us</a>
+        <a href="#" class="hover:text-[#D4AF37] transition-colors">Contact</a>              </nav>
+
+        <!-- Action Button -->
+ <button class="px-5 py-2.5 border border-[#D4AF37]/50 hover:border-[#D4AF37] text-xs font-semibold tracking-wider uppercase rounded-md text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300">Book A Test Drive</button>
+        </div>
+
+
+     </header>
+
+
+
+     <!--hero section-->
+<section class="relative min-h-screen flex items-center pt-24 pb-16 px-6 md:px-16 bg-cover bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1696524147929-56f1e4a05caf?q=80&w=1735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')]">
+<!-- Dark Gradient Overlay for Readability -->
+  <div class="absolute insert-0 bg-gradient-to-r from-black via-black/80 to-transparent">
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full">
+      <div class="max-w-xl">
+        <!-- Subtitle -->
+<span class="block text-center md:text-left text-xs font-semibold tracking-[0.25em] text-[#D4AF37] uppercase">
+  Drive The Extraordinary
+</span>
+         <h1 class="font-serif-luxury text-center md:text-left text-5xl md:text-7xl font-bold tracking-tight text-white mt-2 leading-[1.1]">
+          Luxury <br />
+          <span class="italic text-gray-200">Redefined.</span>
+         </h1>
+
+         <p class="text-gray-400 mt-6 text-sm md:text-base leading-relaxed text-center md:text-left">Discover elite performance, unmatched comfort, and timeless design. Your dream car awaits.</p>
+         <!-- CTA Buttons -->
+
+         <div class=" flex flex-wrap items-center gap-4 mt-8">
+          <button class="px-6 py-3.5 bg-[#C5A059] hover:bg-[#D4AF37] text-black font-semibold text-xs tracking-widest uppercase rounded-md transition-all duration-300 shadow-lg shadow-[#C5A059]/20 flex items-center gap-2"><i>Explore Inventory</i></button>
+
+          <button class="px-6 py-3.5 border border-white/30 hover:border-white text-white font-semibold text-xs tracking-widest uppercase rounded-md backdrop-blur-sm hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
+            <i class="fa-regular fa-circle-play text-sm"></i> Watch Video
+          </button>
+         </div>
+
+
+
+         <!--stats row-->
+<div class="grid  grid-cols-1  md:grid-cols-4  gap-6 mt-14 pt-8 border-t border-white/10  ">
+<div>
+   <div class="flex items-center gap-2 text-[#D4AF37] text-xs font-semibold uppercase tracking-widest">
+    <i class="fa-solid fa-[#121212] fa-[#D4AF37] fa-award"></i> Premium Brands
+  </div>
+
+<p class="text-2xl md:text-3xl font-bold text-white mt-1">50+</p>
+</div>
+
+<!--seciond-->
+<div class="">
+            <div class="flex items-center gap-2 text-[#D4AF37] text-xs font-semibold uppercase tracking-wider">
+              <i class="fa-solid fa-car"></i> Luxury Models
+            </div>
+            <p class="text-2xl md:text-3xl font-bold text-white mt-1">100+</p>
+          </div>
+
+
+
+
+          <!--thrid-->
+          <div>
+            <div class="flex items-center gap-2 text-[#D4AF37] text-xs font-semibold uppercase tracking-wider">
+              <i class="fa-solid fa-users"></i> Happy Clients
+            </div>
+            <p class="text-2xl md:text-3xl font-bold text-white mt-1">10K+</p>
+          </div>
+ 
+</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--premium services-->
+<section class="py-20 px-6 md:px-16 bg-[#080808] border-t border-white/5">
+<div class="max-w-7xl mx-auto">
+
+  <div class="text-center max-w-lg mx-auto">
+    <span class="text-xs font-semibold tracking-[0.25rem] text-[#D4AF37] uppercase">Experience Excellenece</span>
+    <h2 class="font-serif-luxury text-3xl md:text-4xl font-bold mt-2 text-white">Premium Services</h2>
+    <p class="text-gray-400 text-xs md:text-sm mt-3">Every detail is crafted to deliver the ultimate luxury car ownership experience.</p>
+  </div>
+
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+
+
+    <!--card1-->
+<!-- Card 1 -->
+        <div class="bg-[#111111] border border-white/10 rounded-2xl p-6 hover:border-[#D4AF37]/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-white/10 flex items-center justify-center text-[#D4AF37] text-xl group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mt-5">Premium Collection</h3>
+          <p class="text-gray-400 text-xs mt-2 leading-relaxed">Handpicked luxury cars from the world's most prestigious brands.</p>
+        </div>
+
+
+
+
+    <!-- Card 2 -->
+     <div class="bg-[#111111] border border-white/10 rounded-2xl p-6 hover:border-[#D4AF37]/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-white/10 flex items-center justify-center text-[#D4AF37] text-xl group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-shield-check"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mt-5">Certified Quality</h3>
+          <p class="text-gray-400 text-xs mt-2 leading-relaxed">All vehicles undergo a rigorous inspection for uncompromised quality.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#111111] border border-white/10 rounded-2xl p-6 hover:border-[#D4AF37]/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-white/10 flex items-center justify-center text-[#D4AF37] text-xl group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-concierge-bell"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mt-5">Concierge Service</h3>
+          <p class="text-gray-400 text-xs mt-2 leading-relaxed">Personalized assistance for a seamless and luxurious journey.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-[#111111] border border-white/10 rounded-2xl p-6 hover:border-[#D4AF37]/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-white/10 flex items-center justify-center text-[#D4AF37] text-xl group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-[#121212] fa-headset text-[#D4AF37]"></i>
+          </div>
+          <h3 class="text-white font-semibold text-base mt-5">Aftercare Support</h3>
+          <p class="text-gray-400 text-xs mt-2 leading-relaxed">Reliable maintenance and support long after you drive away.</p>
+        </div>
+  </div>
+</div>
+</section>
+
+<!--cars section-->
+<section class="py-20 px-6 md:px-16 bg-[#080808] border-t border-white/5">
+<div class="max-w-7xl mx-auto">
+    <span class="text-xs font-semibold tracking-[0.25rem] text-[#D4AF37] uppercase">Our Collection</span>
+
+    <div class="flex justify-between items-baseline">
+          <h2 class="font-serif-luxury text-3xl md:text-4xl font-bold mt-2 text-white">Featured Luxury Cars</h2>
+
+              <span class="text-xs font-semibold tracking-[0.25rem] text-[#D4AF37] uppercase  underline underline-offset-4">View All Inventory</span>
+
+    </div>
+    <!-- Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-3 mt-10">
+<!--card 1-->
+    <div class="max-w-md w-full bg-[#121212] p-4 border border-white/10 rounded-2xl">
+<!-- Car Image Container with Heart Icon -->
+ <div class="relative h-60 w-full rounded-xl overflow-hidden bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1789330840104-eeefbd73c8c4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')]">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<!-- Favorite Heart Button -->
+<button class="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:text-red-500 hover:bg-black/60 transition-all">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+
+</div>
+<!-- Card Content -->
+ <div class="pt-4 px-1">
+  <div class="flex items-center justify-between">
+    <h3 class="text-white font-bold text-lg tracking-wide">Aston Martin DB11</h3>
+      <span class="text-[#D4AF37] font-semibold text-lg">$214,000</span>
+  </div>
+
+  <!-- Specs Row (Engine, HP, Seats) -->
+
+  <div class="grid grid-cols-3 gap-2 mt-4 py-3 border-y border-white/10 text-gray-400 text-xs">
+    <div class="flex items-center gap-1.5">
+        <i class="fa-solid fa-gauge-high text-[#D4AF37]"></i>
+        <span>5.2L V12</span>
+      </div>
+
+      <div class="flex items-center gap-1.5">
+        <i class="fa-solid fa-bolt text-[#D4AF37]"></i>
+        <span>606 HP</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <i class="fa-solid fa-chair text-[#D4AF37]"></i>
+        <span>2 Seats</span>
+      </div>
+  </div>
+
+  <!-- Footer Action: View Details -->
+    <a href="#" class="flex items-center justify-between py-4 px-3 pb-1 text-white hover:text-[#D4AF37] transition-colors group/link">
+      <span class="text-xs font-semibold tracking-widest uppercase">View Details</span>
+      <i class="fa-solid fa-arrow-right text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
+    </a>
+ </div>
+</div>
+
+
+
+<!-- CARD 2: Rolls-Royce Ghost -->
+      <div class="bg-[#121212] border border-white/10 rounded-2xl p-4 shadow-2xl">
+        
+        <!-- Car Image Container -->
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')]">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+          
+          <button class="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:text-red-500 hover:bg-black/60 transition-all">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Card Content -->
+        <div class="pt-4 px-1">
+          <div class="flex items-center justify-between">
+            <h3 class="text-white font-bold text-lg tracking-wide">Rolls-Royce Ghost</h3>
+            <span class="text-[#D4AF37] font-semibold text-lg">$332,000</span>
+          </div>
+
+          <!-- Specs Row -->
+          <div class="grid grid-cols-3 gap-2 mt-4 py-3 border-y border-white/10 text-gray-400 text-xs">
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-gauge-high text-[#D4AF37]"></i>
+              <span>6.75L V12</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-bolt text-[#D4AF37]"></i>
+              <span>563 HP</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-chair text-[#D4AF37]"></i>
+              <span>5 Seats</span>
+            </div>
+          </div>
+
+          <!-- Footer Action -->
+          <a href="#" class="flex items-center justify-between pt-4 pb-1 text-white hover:text-[#D4AF37] transition-colors group/link">
+            <span class="text-xs font-semibold tracking-widest uppercase">View Details</span>
+            <i class="fa-solid fa-arrow-right text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- CARD 3: Ferrari 812 Superfast -->
+      <div class="bg-[#121212] border border-white/10 rounded-2xl p-4 shadow-2xl">
+        
+        <!-- Car Image Container -->
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')]">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+          
+          <button class="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:text-red-500 hover:bg-black/60 transition-all">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Card Content -->
+        <div class="pt-4 px-1">
+          <div class="flex items-center justify-between">
+            <h3 class="text-white font-bold text-lg tracking-wide">Ferrari 812 Superfast</h3>
+            <span class="text-[#D4AF37] font-semibold text-lg">$412,000</span>
+          </div>
+
+          <!-- Specs Row -->
+          <div class="grid grid-cols-3 gap-2 mt-4 py-3 border-y border-white/10 text-gray-400 text-xs">
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-gauge-high text-[#D4AF37]"></i>
+              <span>6.5L V12</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-bolt text-[#D4AF37]"></i>
+              <span>789 HP</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i class="fa-solid fa-chair text-[#D4AF37]"></i>
+              <span>2 Seats</span>
+            </div>
+          </div>
+
+          <!-- Footer Action -->
+          <a href="#" class="flex items-center justify-between pt-4 pb-1 text-white hover:text-[#D4AF37] transition-colors group/link">
+            <span class="text-xs font-semibold tracking-widest uppercase">View Details</span>
+            <i class="fa-solid fa-arrow-right text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="w-full h-90 relative  bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1722643649191-3f1e38f26f01?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')]">
+  <div class="absolute insert-0 bg-gradient-to-r from-black via-black/90 to-transparent"></div>
+
+
+  <div class="relative py-5 px-6 md:px-16  border-t border-white/5 max-w-7xl mx-auto">
+  <div class="relative text-center max-w-lg mx-auto">
+
+    <h2 class="font-serif-luxury text-3xl md:text-4xl font-bold mt-2 text-white">Why Choose Luxora Motors</h2>
+    <div class="w-12 h-0.5 bg-[#D4AF37] mx-auto mt-3"></div>
+  </div> 
+  </div>
+  
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-16 divide-y sm:divide-y-0 sm:divide-x divide-white/10  py-6">      
+      <!-- CARD 1: Exclusive Selection -->
+      <div class="p-6 text-center group">
+        <div class="w-12 h-12 mx-auto flex items-center justify-center text-[#D4AF37] text-2xl group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-crown"></i>
+        </div>
+        <h3 class="text-white font-semibold text-base mt-4">Exclusive Selection</h3>
+
+        <p class="text-gray-400 text-xs mt-2 leading-relaxed">Access the rarest and most exclusive luxury vehicles.</p>
+      </div>
+
+      <!-- CARD 2: Unmatched Quality -->
+      <div class="p-6 text-center group">
+        <div class="w-12 h-12 mx-auto flex items-center justify-center text-[#D4AF37] text-2xl group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <h3 class="text-white font-semibold text-base mt-4">Unmatched Quality</h3>
+        <p class="text-gray-400 text-xs mt-2 leading-relaxed">Every car meets our highest standards of excellence.</p>
+      </div>
+
+      <!-- CARD 3: Client First -->
+      <div class="p-6 text-center group">
+        <div class="w-12 h-12 mx-auto flex items-center justify-center text-[#D4AF37] text-2xl group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <h3 class="text-white font-semibold text-base mt-4">Client First</h3>
+        <p class="text-gray-400 text-xs mt-2 leading-relaxed">Your satisfaction and privacy are our top priorities.</p>
+      </div>
+
+      <!-- CARD 4: Worldwide Delivery -->
+      <div class="p-6 text-center group">
+        <div class="w-12 h-12 mx-auto flex items-center justify-center text-[#D4AF37] text-2xl group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3 class="text-white font-semibold text-base mt-4">Worldwide Delivery</h3>
+        <p class="text-gray-400 text-xs mt-2 leading-relaxed">Delivering luxury cars to your doorstep.</p>
+      </div>
+        
+
+  </div>
+</section>
+
+</body>
+</html>
